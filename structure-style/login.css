@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.cont {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hold {
+  width: 50%;
+  height: 58%;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  border: 1px solid #fea439;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+  padding: 20px;
+}
+/*.hold h2 {
+  font-family: "fredoka", sans-serif;
+  font-size: 22px;
+}
+.hold input {
+  width: 310px;
+  height: 43px;
+  border-radius: 9px;
+  border: 1px solid lightgray;
+  padding-left: 15px;
+  outline: none;
+}
+.password{
+     width: 310px;
+  height: 43px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  padding-left: 15px;
+  outline: none;
+}*/
