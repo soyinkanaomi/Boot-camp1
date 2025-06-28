@@ -12,15 +12,17 @@
 }
 .cont {
   width: 70%;
-  height: 80vh;
+  height: 535px;
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 23px;
   display: flex;
 }
 .left {
   width: 50%;
-  height: 80vh;
+  height: 60vh;
+  margin-top: 60px;
 }
 .right {
   width: 50%;
@@ -32,20 +34,29 @@
   margin-top: 17px;
   text-align: left;
   padding: 20px;
-  gap: 3px;
+}
+.main {
+  width: 99%;
+  height: 509px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 5px;
 }
 .right h2 {
   color: black;
   font-weight: 22px;
-  
+  margin-bottom: 17px;
 }
 input {
   width: 85%;
-  height: 50vh;
+  height: 62px;
   padding-left: 20px;
   border: 2px solid lightgrey;
   outline: none;
   border-radius: 9px;
+  font-size: 14px;
 }
 
 .right p {
@@ -53,17 +64,19 @@ input {
   font-size: 17px;
   font-weight: 80px;
   color: #19c1b6;
+  margin-top: 7px;
   /* margin-right: 600px; */
 }
 button {
   width: 40%;
-  height: 15%;
+  height: 16%;
   background-color: #19c1b6;
   color: white;
   border: none;
   outline: none;
   border-radius: 20px;
   font-size: 17px;
+  margin-top: 12px;
   /* margin-right: 210px;  */
 }
 button:hover {

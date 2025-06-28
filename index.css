@@ -275,6 +275,7 @@
   font-family: "Fredoka", sans-serif;
   color: white;
   border: none;
+  margin-right: 437px;
   padding: 12px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -323,6 +324,7 @@
   border: none;
   padding: 12px 20px;
   font-size: 16px;
+
   cursor: pointer;
   border-radius: 19px;
 }
