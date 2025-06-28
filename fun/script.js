@@ -23,30 +23,57 @@
 //     alert("Tutor's Profile button clicked!");
 //   });
 
+//sign up
+function signUp() {
+  const fullName = document.getElementById("full-name").value;
+  const guardian = document.getElementById("guardian").value;
+  const guardianPhoneNumber = document.getElementById(
+    "guardian-phone-number"
+  ).value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-function logIn() {
-  const username = document.getElementById("loginUser").value;
-  const password = document.getElementById("loginPass").value;
+  if(!email.trim() || !password.trim()){
+    return alert("all input field required")
+  }else{
+    const userData = {
+      fullName,
+      guardian,
+      guardianPhoneNumber,
+      email,
+      password,
+    };
+    
+  localStorage.setItem("userData", JSON.stringify(userData));
 
-  const savedToLocal = JSON.parse(localStorage.getItem("user"));
+  alert("Sign up successful!");
+  window.location.href = "login.html";
+  }
+  
 
-  if (
-    savedToLocal &&
-    username === savedToLocal.username &&
-    savedToLocal &&
-    password === savedToLocal.password
-  ) {
-    alert("login successful");
-  } else if (
-    savedToLocal &&
-    username !== savedToLocal.username &&
-    savedToLocal &&
-    password !== savedToLocal.password
-  ) {
-    alert("pls fill out the correct information");
-  } else if (savedToLocal && username !== savedToLocal.username) {
-    alert("username not correct");
-  } else if (savedToLocal && password !== savedToLocal.password) {
-    alert("password not correct");
+}
+
+//login
+function login() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const storedEmail = JSON.parse(localStorage.getItem("userData"))
+  const storedPassword = localStorage.getItem("password");
+
+  if (email !== storedEmail.email || password !== storedPassword.password) {
+   return alert("Incorrect info")
+  } else {
+    alert("Login successful!");
+    window.location.href = "protected-page.html";
   }
 }
+
+// function register() {
+//   const registerEmail = document.getElementById("register-email").value;
+//   const registerPassword = document.getElementById("register-password").value;
+
+//   localStorage.setItem("email", registerEmail);
+//   localStorage.setItem("password", registerPassword);
+
+//   alert("Registration successful!");
+// }

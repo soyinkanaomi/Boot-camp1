@@ -3,85 +3,86 @@
   padding: 0;
   font-family: "fredoka", sans-serif;
 }
-.body {
+.signup-container {
+  width: 700px;
+  margin: 50px auto;
+  height: 500px;
+  /* padding: 20px; */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: url("../asset/ChatGPT\ Image\ Jun\ 28\,\ 2025\,\ 12_04_33\ AM.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.top {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cont {
-  width: 70%;
-  height: 535px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  padding: 23px;
-  display: flex;
-}
-.left {
-  width: 50%;
-  height: 60vh;
+  height: 100%;
+  background-color: blue;
   margin-top: 60px;
 }
+
+
 .right {
-  width: 50%;
-  height: 50vh;
+    width: 400px;
+  margin: 50px auto;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.771);
+  
+  /* padding: 20px; */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  margin-top: 17px;
-  text-align: left;
-  padding: 20px;
-}
-.main {
-  width: 99%;
-  height: 509px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  gap: 5px;
-}
-.right h2 {
-  color: black;
-  font-weight: 22px;
-  margin-bottom: 17px;
-}
-input {
-  width: 85%;
-  height: 62px;
-  padding-left: 20px;
-  border: 2px solid lightgrey;
-  outline: none;
-  border-radius: 9px;
-  font-size: 14px;
 }
 
-.right p {
-  font-family: "fredoka", sans-serif;
-  font-size: 17px;
-  font-weight: 80px;
-  color: #19c1b6;
-  margin-top: 7px;
-  /* margin-right: 600px; */
+.right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 250px;
+
 }
-button {
-  width: 40%;
-  height: 16%;
-  background-color: #19c1b6;
-  color: white;
+
+
+ .signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container select {
+  width: 230px;
+  height: 15px;
+  margin-bottom: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} 
+
+.signup-container button[type="button"] {
+  width: 100%;
+  height: 40px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
   border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 17px;
-  margin-top: 12px;
-  /* margin-right: 210px;  */
+  border-radius: 5px;
+  cursor: pointer;
 }
-button:hover {
-  color: #2d3434;
+/* .signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.stand {
-  color: black;
-}
+
+
+
+
+
+#error-message {
+  color: red;
+} */

@@ -3,39 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
     <link rel="stylesheet" href="../structure-style/signup.css" />
-    <title>sign up</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
     </style>
   </head>
   <body>
-    <div class="body">
-      <div class="cont">
-        <div class="left">
-          <img
-            src="../asset/ChatGPT Image Jun 28, 2025, 12_04_33 AM.png"
-            alt="image"
-            width="410"
-            height="370"
-          />
-        </div>
-        <div class="right">
-          <div class="main">
-          <h2>sign up</h2>
+    <div class="signup-container">
+      <div class="right">
+        <form>
+          <h2 style="text-align: center">Sign Up</h2>
+          <input type="text" id="full-name" placeholder="Full Name" />
 
-          <input type="text" id="" placeholder=" Full name" required />
-          <input type="text" id="" placeholder="Gender" required />
-          <input type="calender" id="" placeholder="Date of birth" required />
-          <input type="text" placeholder="Residential address" required />
-          <input type="text" placeholder="Gurdian" required />
-          <input type="text" placeholder="Gurdian's phone number" required />
-          <input type="password" placeholder="password" required />
-          <input type="password" placeholder="Email" required />
-          <p>Don't have an account?<span class="stand">Sign up</span></p>
-          <button>Log in</button>
-        </div>
+          <input type="text" id="guardian" placeholder="Guardian's Name" />
+          <input
+            type="text"
+            id="guardian-phone-number"
+            placeholder="Guardian's Phone Number"
+          />
+          <input type="email" id="email" placeholder="Email" />
+          <input type="password" id="password" placeholder="Password" />
+          <p>
+            Already have an account?
+            <strong style="color: green; cursor: pointer">Sign In</strong>
+          </p>
+          <button type="button" onclick="signUp()">Sign Up</button>
+        </form>
       </div>
+      <p id="error-message"></p>
     </div>
+
+    <script src="../fun/script.js"></script>
   </body>
 </html>
