@@ -1,62 +1,68 @@
-body {
-  font-family: "Fredoka", sans-serif;
-  background-color: #f2f2f2;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "fredoka", sans-serif;
 }
-
-.login-container {
-  width: 500px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
+.cont {
+  width: 65%;
+  height: 80vh;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
 }
-
-.login-container input[type="email"],
-.login-container input[type="password"] {
-  width: 90%;
-  height: 30px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid grey;
-  border-radius: 5px;
-  font-family: "Fredoka", sans-serif;
+.left {
+  width: 50%;
+  height: 80vh;
+}
+.right {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  text-align: left;
+  gap: 3px;
+}
+.right h2 {
+  color: black;
+  font-weight: 22px;
+}
+input {
+  width: 85%;
+  height: 15%;
+  padding-left: 20px;
+  border: 2px solid lightgrey;
   outline: none;
+  border-radius: 9px;
 }
 
-.login-container button[type="submit"] {
-  width: 100px;
-  height: 40px;
-  background-color: #03a9f4;
-  color: #fff;
-  padding: 10px;
+.right p {
+  font-family: "fredoka", sans-serif;
+  font-size: 17px;
+  color: #19c1b6;
+  margin-right: 220px;
+}
+button {
+  width: 40%;
+  height: 15%;
+  background-color: #19c1b6;
+  color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  font-size: 17px;
+  margin-right: 210px;
 }
-
-.login-container button[type="submit"]:hover {
-  background-color: #039be5;
-}
-
-#forgot-password {
-  font-size: 14px;
-  text-decoration: none;
-  color: #03a9f4;
-}
-
-#signup {
-  margin-top: 20px;
-  font-size: 14px;
-}
-
-#signup-link {
-  text-decoration: none;
-  color: #000;
+button:hover {
+  color: #2d3434;
 }
