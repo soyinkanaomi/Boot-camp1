@@ -51,6 +51,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  outline: none;
 }
 
 #error-nessage {
