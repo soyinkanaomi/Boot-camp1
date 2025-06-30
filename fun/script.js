@@ -33,39 +33,55 @@ function signUp() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  if(!email.trim() || !password.trim()){
-    return alert("all input field required")
-  }else{
-    const userData = {
-      fullName,
-      guardian,
-      guardianPhoneNumber,
-      email,
-      password,
-    };
-    
-  localStorage.setItem("userData", JSON.stringify(userData));
+  if (!fullName || !password || !guardian || !guardianPhoneNumber || !email) {
+    return alert("all input field required");
+  }
+  const userData = {
+    fullName,
+    guardian,
+    guardianPhoneNumber,
+    password,
+    email,
+  };
+
+  
 
   alert("Sign up successful!");
   window.location.href = "login.html";
-  }
-  
-
 }
 
 //login
 function login() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-  const storedEmail = JSON.parse(localStorage.getItem("userData"))
-  const storedPassword = localStorage.getItem("password");
+  const savedToLocal = JSON.parse(localStorage.getItem("userData"));
 
-  if (email !== storedEmail.email || password !== storedPassword.password) {
-   return alert("Incorrect info")
-  } else {
-    alert("Login successful!");
-    window.location.href = "protected-page.html";
+  if (
+    savedToLocal &&
+    password === savedToLocal.password &&
+    email === savedToLocal.email
+  ) {
+    alert("login successful");
+  } else if (!savedToLocal) {
+    alert("no user data found please sign up first");
+  } else if (
+    email !== savedToLocal.email &&
+    password !== savedToLocal.password
+  ) {
+    alert("both email and password are incorrect");
+  } else if (email !== savedToLocal.email) {
+    alert("email is incorrect");
+  } else if (password !== savedToLocal.password) {
+    alert("password is incorrect");
   }
+
+  //   if (email !== storedEmail.email && password !== storedPassword.password) {
+  //    return alert("Incorrect info")
+  //   } else {
+  //     alert("Login successful!");
+  //     window.location.href = "protected-page.html";
+
+  //   }
 }
 
 // function register() {
@@ -77,3 +93,4 @@ function login() {
 
 //   alert("Registration successful!");
 // }
+

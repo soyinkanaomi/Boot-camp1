@@ -12,29 +12,21 @@
   <body>
     <div class="body">
       <div class="cont">
-        <div class="left">
-          <img
-            src="../asset/ChatGPT Image Jun 28, 2025, 12_04_33 AM.png"
-            alt="image"
-            width="380"
-            height="472"
-          />
-        </div>
+        
         <div class="right">
           <h2>Secure login</h2>
-          <form id="login-form">
+          
             <input type="email" id="email" placeholder=" email address" required />
           <input type="password" id="password" placeholder="password" required />
-          <button type="submit">Log in</button>
-        </form>
+          <button type="button" onclick="Login()">Log in</button>
+           <p>
+            Don't have an account?
+            <strong style="color:#fea439 ; cursor: pointer">Sign In</strong>
+          </p>
           <p id="error-message"></p>
-          <div class="sub">
-            <p>forgot password?</p>
-          </div>
-          
-          <p >Dont't have an account?<span class="color">Sign up</span></p>
         </div>
       </div>
     </div>
+    <script src="../fun/script.js"></script>
   </body>
 </html>

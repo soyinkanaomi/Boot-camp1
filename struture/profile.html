@@ -1,72 +1,99 @@
-Here's the complete code for the six profile cards:
-
-index.html
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Profiles</title>
+    <title>profile card</title>
     <link rel="stylesheet" href="../structure-style/profile.css">
-</head>
+     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+    </style>
+  </head>
 <body>
-    <div class="profile-container">
-        <div class="profile-card">
-            <div class="profile-background" style="background-image: url('https://example.com/educational-background1.jpg');"></div>
-            <div class="profile-info">
-                <h2 id="teacher-name1">Mrs. Nneoma</h2>
-                <p id="subjects1">Mathematics, Physics</p>
-                <p id="lesson-time1">Monday - Friday, 8am - 5pm</p>
-                <p id="email-address1">nneoma@example.com</p>
-                <p id="residential-address1">123, Example Street, Lagos, Nigeria</p>
-                <button id="view-more1" onclick="viewMore(1)">View More</button>
-                <button id="subscribe1" onclick="subscribe()">Subscribe to YouTube Channel</button>
-                <div id="more-details1" style="display: none;">
-                    <p id="about-me1">I'm a passionate teacher with over 10 years of experience in teaching Mathematics and Physics.</p>
-                    <a id="youtube-link1" href="https://www.youtube.com/@AfricanTeacher" target="_blank">Watch my YouTube videos</a>
-                </div>
-            </div>
+    <div class="cont">
+        <!-- <h2>Tutor's profile</h2> -->
+        <div class="cards">
+            <h2>Mr Jamiu</h2>
+            <p>Subject:  Letters</p>
+            <p>Day: Saturdays</p>
+            <p>Time: 10am-11am</p>
+            <p>Staus: Married</p>
+            <p>Email: Jamiufakoya@gmail.com</p>
+            <button id="youtube">View More</button>
         </div>
-        <div class="profile-card">
-            <div class="profile-background" style="background-image: url('https://example.com/educational-background2.jpg');"></div>
-            <div class="profile-info">
-                <h2 id="teacher-name2">Mr. John</h2>
-                <p id="subjects2">English, Literature</p>
-                <p id="lesson-time2">Monday - Friday, 9am - 6pm</p>
-                <p id="email-address2">john@example.com</p>
-                <p id="residential-address2">456, Example Street, Abuja, Nigeria</p>
-                <button id="view-more2" onclick="viewMore(2)">View More</button>
-                <button id="subscribe2" onclick="subscribe()">Subscribe to YouTube Channel</button>
-                <div id="more-details2" style="display: none;">
-                    <p id="about-me2">I'm a dedicated teacher with over 5 years of experience in teaching English and Literature.</p>
-                    <a id="youtube-link2" href="https://www.youtube.com/@AfricanTeacher" target="_blank">Watch my YouTube videos</a>
-                </div>
-            </div>
+        <div class="cards">
+            <h2>Mrs Okafor</h2> 
+            <p>Subject:  Numbers</p>
+            <p>Day: Wednesday</p>
+            <p>Time: 2pm-3pm</p>
+            <p>Staus: Married</p>
+            <p>Email: Okaforfavvy@gmail.com</p>
+           <button id="youtube">View More</button>
         </div>
-        <div class="profile-card">
-            <div class="profile-background" style="background-image: url('https://example.com/educational-background3.jpg');"></div>
-            <div class="profile-info">
-                <h2 id="teacher-name3">Mrs. Jane</h2>
-                <p id="subjects3">Biology, Chemistry</p>
-                <p id="lesson-time3">Monday - Friday, 10am - 7pm</p>
-                <p id="email-address3">jane@example.com</p>
-                <p id="residential-address3">789, Example Street, Port Harcourt, Nigeria</p>
-                <button id="view-more3" onclick="viewMore(3)">View More</button>
-                <button id="subscribe3" onclick="subscribe()">Subscribe to YouTube Channel</button>
-                <div id="more-details3" style="display: none;">
-                    <p id="about-me3">I'm a passionate teacher with over 8 years of experience in teaching Biology and Chemistry.</p>
-                    <a id="youtube-link3.0" target="_blank">Watch my YouTube videos</a>
-                </div>
-            </div>
+        <div class="cards">
+            <h2>Mrs Ibidun</h2>
+            <p>Subject:  Drawing</p>
+            <p>Day: Tuesdays</p>
+            <p>Time: 12am-1pm</p>
+            <p>Staus: Married</p>
+            <p>Email: Tayoibidun@gmail.com</p>
+             <button id="youtube">View More</button>
         </div>
-        <div class="profile-card">
-            <div class="profile-background" style="background-image: url('https://example.com/educational-background4.jpg');"></div>
-            <div class="profile-info">
-                <h2 id="teacher-name4">Mr. Mike</h2>
-                <p id="subjects4">Physics, Mathematics</p>
-                <p id="lesson-time4">Monday - Friday, 11am - 8pm</p>
-                <p id="email-address4">mike@example.com</p>
-                <p id="residential-address4">901, Street, Kano, Nigeria</p>
-                
+        <div class="cards">
+            <h2>Miss Fathia</h2>
+            <p>Subject:    Rhymes</p>
+            <p>Day: Mondays</p>
+            <p>Time: 10am-11am</p>
+            <p>Staus: single</p>
+            <p>Email: Olayinkafathia@gmail.com</p>
+              <button id="youtube">View More</button>
+        </div>
+        <div class="cards">
+            <h2>Mr Precious</h2>
+            <p>Subject:  Sport</p>
+            <p>Day: Fridays</p>
+            <p>Time: 12pm-1pm</p>
+            <p>Staus: Married</p>
+            <p>Email: Preciousyinka@gmail.com</p>
+             <button id="youtube">View More</button>
+        </div>
+        <div class="cards">
+            <h2>Mr pascal</h2>
+            <p>Subject: Phonetics</p>
+            <p>Day: Thursdays</p>
+            <p>Time: 10am-11am </p>
+            <p>Staus: single</p>
+            <p>Email: Olamidepascal@gmail.com</p>
+            <button id="youtube">View More</button>
+        </div>
+        <div class="cards">
+        <h2>Miss Oyedele</h2>
+        <p>Subject: Moral </p>
+        <p>Day: Mondays</p>
+        <p>Time: 2pm-3pm</p>
+        <p>Staus: single</p>
+         <p>Email: Ifeoluwa@gmail.com</p>
+         <button id="youtube">View More</button>
+        </div>
+        <div class="cards">
+            <h2>Mrs Evelny</h2>
+            <p>Subject: Painting</p>
+            <p>Day: Fridays</p>
+            <p>Time: 3pm-4pm</p>
+            <p>Staus: Married</p>
+            <p>Email: Iretimileyin@gmail.com</p>
+             <button id="youtube">View More</button>
+        </div>
+        <div class="cards">
+            <h2>Mr Adams</h2>
+            <p>Subject:  Spelling-Bee</p>
+            <p>Day: Thursdays</p>
+            <p>Time: 11am-12pm</p>
+            <p>Staus: Married</p>
+            <p>Email: Adamseze@gmail.com</p>
+            
+             <a id="youtube-link1" href="https://www.youtube.com/watch?v=n0ZYpbxHEMs" target="_blank> <button style="cursor: pointer;">View More</button></a>
+        </div>
+    </div>
+</body>
+</html>
