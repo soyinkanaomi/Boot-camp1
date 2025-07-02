@@ -47,11 +47,11 @@ function signUp() {
   
 
   alert("Sign up successful!");
-  window.location.href = "login.html";
+  window.location.href = "./struture/login.html";
 }
 
 //login
-function login() {
+function Login() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   const savedToLocal = JSON.parse(localStorage.getItem("userData"));
@@ -62,6 +62,7 @@ function login() {
     email === savedToLocal.email
   ) {
     alert("login successful");
+    window.location.href = "../struture/profile2.html";
   } else if (!savedToLocal) {
     alert("no user data found please sign up first");
   } else if (
