@@ -47,7 +47,7 @@ function signUp() {
   
 
   alert("Sign up successful!");
-  window.location.href = "./struture/login.html";
+  window.location.href = "../struture/login.html";
 }
 
 //login
